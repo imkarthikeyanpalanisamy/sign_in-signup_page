@@ -2,32 +2,152 @@
 <html lang="en">
 <html>
 <head>
-    <title>Form tag - sign in</title>
+    <title>Form tag - Sign up</title>
     <link rel="icon" href="./My image.jpeg">
-    <link rel="stylesheet" href="style.css"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale 1.0, maximum-scale 1.0 user-scalable-0">
     <meta name="content" content="KARTHIKEYAN P">
     <meta name="content" description="Web Development Internship">
+    <style>
+        body{
+            background:rgba(253, 115, 72, 0.589);
+            height: 625px;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            box-sizing: border-box;
+            -webkit-background-size: cover;
+
+        }
+        button{
+      width:120px;
+      height:25px;
+      background-color: rgba(253, 114, 72, 0.349);
+      border:2px solid black;
+      border-radius:5px;
+      text-align: center;
+      margin-left: 100px;
+      cursor: pointer;
+   }
+   .btn{
+      cursor: pointer;
+   }
+   img{
+     border-radius: 50%;
+   }
+   form{
+      width:max-content;
+      margin-left: 500px; 
+   }
+   h2{
+      text-align: center;
+   }
+   legend{
+      text-align:center;
+   }
+   h1{
+      text-align: center;
+   }
+   
+    </style>
+    </style>
 </head>
 <body>
     <!--Form tags-->
-    <!--Sign in Form-->
+    <!--Sign up Form-->
     <form>
         <h2><u>Form tags</u></h2>
         <fieldset>
-        <legend><h3><b>Signin Form</b></h3></legend>
+        <legend><h3><b>Signup Form</b></h3></legend>
         <label for="username">Username</label>
-        <input id="username" type="text" placeholder="Enter your name" minlength="5" maxlength="10" required autofocus><br><br>
+        <input id="username" type="text" placeholder="Enter your username" minlength="5" maxlength="10" required autofocus><br><br>
+        <label for="first name">First name</label>
+        <input id="first name" type="text" placeholder="Enter your first name" minlength="5" maxlength="10" required autofocus><br><br>
+        <label for="last name">Last name</label>
+        <input id="last name" type="text" placeholder="Enter yourlast name" minlength="5" maxlength="10" required autofocus><br><br>
         <label for="password">Password</label>
         <input id="password" type="password" placeholder="Enter your password" minlength="5" maxlength="10" required autofocus><br><br>
-        
-        <label><input id="submit" type="checkbox" required autofocus>keep me signed in</label><br><br>
-        <input  type="submit" value="Reset">
-        <input  type="submit" value="submit"><br><br>
-        <label for="">Create a new account</label><br>
-        <a href="form tag - signup.html">Sign up</a>
+        <label for="confirm password">Confirm password</label>
+        <input id="confirm password" type="password" placeholder="Enter your confirm password" minlength="5" maxlength="10" required autofocus><br><br>
+        <label for="email id">Email Id</label>
+        <input id="email id" type="email" placeholder="Enter your email id" required autofocus><br><br>
+        <label for="mobile number">Phone number</label>
+        <input id="mobile number" type="mobile number" placeholder="Enter your mobile number" required autofocus><br><br>
+        <label for="address">Address</label><br>
+        <textarea id="address" type="text" placeholder="start type here.."></textarea>
+        <br><br>
+        <label for="dob">Date of birth</label>
+        <input id="dob" type="date" ><br><br>
+        <label for="gender">Gender</label>
+        <input id="male" type="radio" name="gender" required>
+        <label for="femmale">Male</label>
+        <input id="female" type="radio" name="gender" required>
+        <label for="female">Female</label> <br><br>
+        <label for="marrital status">marrital status</label>
+        <input id="married" type="radio" name="marrital status" required>
+        <label for="married">Married</label>
+        <input id="unmarried" type="radio" name="marrital status" required>
+        <label for="unmarried">Un Married</label> <br><br>
+        <label for="age">Age</label>
+        <input id="age" type="number" ><br><br>
+        <label for="time">Time</label>
+        <input id="time" type="time">
+        <br><br>
+        <label for="price">Price</label>
+        <input id="price" type="range">
+        <br><br>
+        <label for="color">Choose your favourite color</label>
+        <input id="color" type="color">
+        <br><br>
+        <label for="photo">Choose your photo</label>
+        <input id="photo" type="file" multiple>
+        <br><br>
+        <label for="website">Website</label>
+        <input id="website" type="url" >
+        <br><br>
+        <label for="search">Job search</label>
+        <input id="search" type="search">
+        <br><br>
+        <label for="">choose your department</label>
+        <select name=""  id="position">
+            <optgroup label="department">
+                <option value="">mechanical</option>
+                <option value="">EEE</option>
+                <option value="">CSE</option>
+                <option value="">ECE</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <select>
+            <label for="country">Country</label>
+            <option>India</option>
+            <option>Malaysia</option>
+            <option>USA</option>
+            <option>Chinna</option>
+        </select>
+        <br><br>
+        <select>
+            <label for="state">State</label>
+            <option>Tamilnadu</option>
+            <option>Kerala</option>
+            <option>Karnataka</option>
+            <option>Andharapradesh</option>
+        </select>
+        <br><br>
+        <select>
+            <label for="district">District</label>
+            <option>Trichy</option>
+            <option>chennai</option>
+            <option>madhurai</option>
+            <option>karur</option>
+        </select>
+        <br><br>
+        <label><input id="submit" type="checkbox" required autofocus>I accept the Terms of Use & Privacy Policy</label><br><br>
+        <button>Signup</button>
+        <br><br>
+        <label for="">Already have an account?</label><br>
+        <a href="form tag - signin.html">Login</a>
     </fieldset>
     </form>
 </body>
