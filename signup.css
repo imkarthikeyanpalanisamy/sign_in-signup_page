@@ -1,0 +1,39 @@
+body{
+    background:rgba(253, 115, 72, 0.589);
+    height: 625px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-background-size: cover;
+
+}
+button{
+width:120px;
+height:25px;
+background-color: rgba(253, 114, 72, 0.349);
+border:2px solid black;
+border-radius:5px;
+text-align: center;
+margin-left: 100px;
+cursor: pointer;
+}
+.btn{
+cursor: pointer;
+}
+img{
+border-radius: 50%;
+}
+form{
+width:max-content;
+margin-left: 500px; 
+}
+h2{
+text-align: center;
+}
+legend{
+text-align:center;
+}
+h1{
+text-align: center;
+}
